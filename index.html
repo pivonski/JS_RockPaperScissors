@@ -5,19 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors Game</title>
 </head>
 
 <body>
+    <div class="all-site">
 
-    <h2>Computer choice: <span id="computer-choice"></span></h2>
-    <h2>Your choice: <span id="player-choice"></span></h2>
-    <h2>Result: <span id="result"></span></h2>
+        <h1 class="heading puff-in-center ">ROCK PAPER SCISSORS GAME</h1>
+        <div class="main-content">
+            <div class="choices-container">
+                <h2 class="slide-in-left h2-computer"><span class="h2-computer-text">Computer choice: </span><span id="computer-choice"></span></h2>
+                <h2 class="slide-in-right h2-player"><span class="h2-player-text">Your choice: </span> <span id="player-choice"></span></h2>
+            </div>
+            <div class="emoji-container">
+                <h2><span id="computer-emoji"></span></h2>
+                <h2><span id="player-emoji"></span></h2>
+            </div>
+            <div class="result-container slide-in-blurred-bottom">
+                <h2>Result: <span id="result"></span></h2>
+            </div>
+        </div>
+    
+    
+        <div class="button-container flicker-in-1">
+    
+            <button id="ROCK" onclick="play('rock')"> ROCK</button>
+            <button id="PAPER" onclick="play('paper')"> PAPER</button>
+            <button id="SCISSORS" onclick="play('scissors')"> SCISSORS</button>
+    
+    
+        </div>
+    </div>
 
 
-    <button id="ROCK"> ROCK</button>
-    <button id="PAPER"> PAPER</button>
-    <button id="SCISSORS"> SCISSORS</button>
 
     <script src="script.js"></script>
 </body>
